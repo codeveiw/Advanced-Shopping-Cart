@@ -12,6 +12,6 @@ This project is a simple and responsive shopping cart application built with Rea
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/codeveiw/Advenced-Shopping-Cart.git
+git clone https://github.com/codeveiw/Advanced-Shopping-Cart.git
 cd Advenced-Shopping-Cart
 
