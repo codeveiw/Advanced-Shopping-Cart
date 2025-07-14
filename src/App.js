@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Container } from "react-bootstrap";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import Store from "./components/Store";
+import About from "./components/About";
+import ShoppingCartProvider from "./Context/shoppingCartContext";
 function App() {
+  const routing = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        {path:"/store",element:<Store/>},
+        {path:"/about",element:<About/>},
+      ],
+    },
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <ShoppingCartProvider>
+     <RouterProvider router={routing}></RouterProvider>
+    </ShoppingCartProvider>
+    
   );
 }
 

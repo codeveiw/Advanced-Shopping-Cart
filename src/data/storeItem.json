@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Modern thin laptop",
+    "price": 1300,
+    "imgUrl": "/imgs/comone.jpg"
+  },
+  {
+    "id": 2,
+    "name": "silver laptop's sleek design",
+    "price": 1199,
+    "imgUrl": "/imgs/computer.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Soothing glow of a laptop",
+    "price": 1500,
+    "imgUrl": "/imgs/comptwo.webp"
+  },
+  {
+    "id": 4,
+    "name": "A laptop the podium",
+    "price": 14000,
+    "imgUrl": "/imgs/comthree.jpg"
+  }
+]
